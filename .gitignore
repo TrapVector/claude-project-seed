@@ -1,0 +1,13 @@
+# Secrets never go in the repo. Commit an .env.example instead.
+.env*
+!.env.example
+
+# Machine-local Claude Code settings (sandbox config, personal permissions).
+.claude/settings.local.json
+
+# OS and editor noise.
+.DS_Store
+Thumbs.db
+*.log
+
+# Milestone 1 task 1 adds the stack's build and test output folders here.

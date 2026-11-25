@@ -1,2 +1,7 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalise line endings.
+* text=auto eol=lf
+
+# The decisions log is append-only, so when a session merges main into its branch,
+# entries added on both sides are kept instead of conflicting. (GitHub's web
+# conflict check ignores this; merging main locally before finishing applies it.)
+docs/decisions.md merge=union
